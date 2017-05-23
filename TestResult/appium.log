@@ -1,0 +1,295 @@
+2017-02-08 08:34:45:408 - info: [Appium] Welcome to Appium v1.6.3
+2017-02-08 08:34:45:410 - info: [Appium] Non-default server args:
+2017-02-08 08:34:45:411 - info: [Appium]   address: 'localhost'
+2017-02-08 08:34:45:411 - info: [Appium]   bootstrapPort: 4780
+2017-02-08 08:34:45:411 - info: [Appium]   sessionOverride: true
+2017-02-08 08:34:45:411 - info: [Appium]   log: 'TestResult//appium.log'
+2017-02-08 08:34:45:411 - info: [Appium]   defaultCommandTimeout: 600
+2017-02-08 08:34:45:447 - info: [Appium] Appium REST http interface listener started on localhost:4723
+2017-02-08 08:34:56:687 - info: [HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"deviceName":"a8eaec07","unicodeKeyboard":true,"automationName":"Appium","resetKeyboard":true,"platformVersion":"6.0.1","appPackage":"com.wxws.myticket","platformName":"Android","appActivity":"com.myticket.activity.WelcomeActivity"}}
+2017-02-08 08:34:56:690 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"deviceName":"a8eaec07","unicodeKeyboard":true,"automationName":"Appium","resetKeyboard":true,"platformVersion":"6.0.1","appPackage":"com.wxws.myticket","platformName":"Android","appActivity":"com.myticket.activity.WelcomeActivity"},null,null,null,null]
+2017-02-08 08:34:56:693 - info: [Appium] Creating new AndroidDriver session
+2017-02-08 08:34:56:693 - info: [Appium] Capabilities:
+2017-02-08 08:34:56:706 - info: [Appium]   deviceName: 'a8eaec07'
+2017-02-08 08:34:56:707 - info: [Appium]   unicodeKeyboard: true
+2017-02-08 08:34:56:707 - info: [Appium]   automationName: 'Appium'
+2017-02-08 08:34:56:707 - info: [Appium]   resetKeyboard: true
+2017-02-08 08:34:56:707 - info: [Appium]   platformVersion: '6.0.1'
+2017-02-08 08:34:56:707 - info: [Appium]   appPackage: 'com.wxws.myticket'
+2017-02-08 08:34:56:708 - info: [Appium]   platformName: 'Android'
+2017-02-08 08:34:56:708 - info: [Appium]   appActivity: 'com.myticket.activity.WelcomeActivity'
+2017-02-08 08:34:56:710 - info: [debug] [AndroidDriver] AndroidDriver version: 1.10.38
+2017-02-08 08:34:56:716 - info: [BaseDriver] Session created with session id: 92adfcb8-6f80-4115-8bb3-56e4042f8b6c
+2017-02-08 08:34:56:717 - info: [debug] [AndroidDriver] Getting Java version
+2017-02-08 08:34:56:931 - info: [AndroidDriver] Java version is: 1.7.0_55
+2017-02-08 08:34:56:933 - info: [ADB] Checking whether adb is present
+2017-02-08 08:34:56:937 - info: [ADB] Using adb.exe from D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe
+2017-02-08 08:34:56:937 - info: [AndroidDriver] Retrieving device list
+2017-02-08 08:34:56:937 - info: [debug] [ADB] Trying to find a connected android device
+2017-02-08 08:34:56:938 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:34:57:218 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:34:57:218 - info: [AndroidDriver] Looking for a device with Android '6.0.1'
+2017-02-08 08:34:57:218 - info: [debug] [ADB] Setting device id to a8eaec07
+2017-02-08 08:34:57:218 - info: [ADB] Getting device platform version
+2017-02-08 08:34:57:219 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:34:57:244 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:34:57:246 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","getprop","ro.build.version.release"]
+2017-02-08 08:34:57:315 - info: [AndroidDriver] Using device: a8eaec07
+2017-02-08 08:34:57:317 - info: [ADB] Checking whether adb is present
+2017-02-08 08:34:57:321 - info: [ADB] Using adb.exe from D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe
+2017-02-08 08:34:57:322 - info: [debug] [ADB] Setting device id to a8eaec07
+2017-02-08 08:34:57:325 - info: [AndroidDriver] App file was not listed, instead we're going to run com.wxws.myticket directly on the device
+2017-02-08 08:34:57:326 - info: [debug] [AndroidDriver] Checking whether package is present on the device
+2017-02-08 08:34:57:327 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:34:57:359 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:34:57:359 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","pm","list","packages","com.wxws.myticket"]
+2017-02-08 08:34:58:946 - info: [AndroidDriver] Starting Android session
+2017-02-08 08:34:58:950 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","wait-for-device"]
+2017-02-08 08:34:58:996 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:34:59:022 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:34:59:022 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","echo","ping"]
+2017-02-08 08:34:59:077 - info: [debug] [Logcat] Starting logcat capture
+2017-02-08 08:34:59:162 - info: [debug] [AndroidDriver] Enabling Unicode keyboard support
+2017-02-08 08:34:59:162 - info: [debug] [AndroidDriver] Pushing unicode ime to device...
+2017-02-08 08:34:59:162 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","install","D:\\Program Files\\nodejs\\node_modules\\appium\\node_modules\\appium-android-ime\\bin\\UnicodeIME-debug.apk"]
+2017-02-08 08:35:00:543 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:35:00:584 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:35:00:595 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","settings","get","secure","default_input_method"]
+2017-02-08 08:35:01:725 - info: [debug] [AndroidDriver] Unsetting previous IME com.sohu.inputmethod.sogou.xiaomi/.SogouIME
+2017-02-08 08:35:01:726 - info: [debug] [AndroidDriver] Setting IME to 'io.appium.android.ime/.UnicodeIME'
+2017-02-08 08:35:01:726 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:35:01:747 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:35:01:747 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","ime","enable","io.appium.android.ime/.UnicodeIME"]
+2017-02-08 08:35:03:197 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:35:03:220 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:35:03:220 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","ime","set","io.appium.android.ime/.UnicodeIME"]
+2017-02-08 08:35:04:855 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2017-02-08 08:35:04:855 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","install","D:\\Program Files\\nodejs\\node_modules\\appium\\node_modules\\io.appium.settings\\bin\\settings_apk-debug.apk"]
+2017-02-08 08:35:06:478 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2017-02-08 08:35:06:479 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","install","D:\\Program Files\\nodejs\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk"]
+2017-02-08 08:35:08:389 - info: [ADB] Getting device platform version
+2017-02-08 08:35:08:389 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:35:08:419 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:35:08:419 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","getprop","ro.build.version.release"]
+2017-02-08 08:35:08:491 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:35:08:518 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:35:08:519 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","dumpsys","window"]
+2017-02-08 08:35:08:639 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2017-02-08 08:35:08:641 - warn: [AndroidDriver] No app sent in, not parsing package/activity
+2017-02-08 08:35:08:641 - info: [debug] [AndroidDriver] No app capability. Assuming it is already on the device
+2017-02-08 08:35:08:642 - info: [debug] [AndroidDriver] Running fast reset (stop and clear)
+2017-02-08 08:35:08:642 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:35:08:670 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:35:08:671 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","am","force-stop","com.wxws.myticket"]
+2017-02-08 08:35:10:317 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:35:10:350 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:35:10:350 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","pm","clear","com.wxws.myticket"]
+2017-02-08 08:35:11:543 - info: [debug] [AndroidBootstrap] Watching for bootstrap disconnect
+2017-02-08 08:35:11:544 - info: [debug] [ADB] Forwarding system: 4780 to device: 4724
+2017-02-08 08:35:11:545 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","forward","tcp:4780","tcp:4724"]
+2017-02-08 08:35:11:550 - info: [debug] [UiAutomator] Starting UiAutomator
+2017-02-08 08:35:11:551 - info: [debug] [UiAutomator] Moving to state 'starting'
+2017-02-08 08:35:11:551 - info: [debug] [UiAutomator] Parsing uiautomator jar
+2017-02-08 08:35:11:551 - info: [debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+2017-02-08 08:35:11:552 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","push","D:\\Program Files\\nodejs\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar","/data/local/tmp/"]
+2017-02-08 08:35:11:600 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2017-02-08 08:35:11:601 - info: [debug] [ADB] Getting all processes with uiautomator
+2017-02-08 08:35:11:601 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:35:11:633 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:35:11:633 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","ps"]
+2017-02-08 08:35:11:829 - info: [ADB] No uiautomator process found to kill, continuing...
+2017-02-08 08:35:11:829 - info: [debug] [UiAutomator] Starting UIAutomator
+2017-02-08 08:35:11:830 - info: [debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","a8eaec07","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.wxws.myticket","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+2017-02-08 08:35:13:417 - info: [debug] [UiAutomator] Moving to state 'online'
+2017-02-08 08:35:13:424 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+2017-02-08 08:35:13:425 - info: [AndroidBootstrap] Android bootstrap socket is now connected
+2017-02-08 08:35:13:430 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:35:13:435 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+2017-02-08 08:35:13:464 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:35:13:464 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","getprop","ro.build.version.sdk"]
+2017-02-08 08:35:13:554 - info: [debug] [ADB] Device API level: 23
+2017-02-08 08:35:13:555 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:35:13:580 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:35:13:581 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","am","start","-W","-n","com.wxws.myticket/com.myticket.activity.WelcomeActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+2017-02-08 08:35:16:650 - info: [Appium] New AndroidDriver session created successfully, session 92adfcb8-6f80-4115-8bb3-56e4042f8b6c added to master session list
+2017-02-08 08:35:16:653 - info: [debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"deviceName":"a8eaec07","unicodeKeyboard":true,"automationName":"Appium","resetKeyboard":true,"platformVersion":"6.0.1","appPackage":"com.wxws.myticket","platformName":"Android","appActivity":"com.myticket.activity.WelcomeActivity"},"deviceName":"a8eaec07","unicodeKeyboard":true,"automationName":"Appium","resetKeyboard":true,"platformVersion":"6.0.1","appPackage":"com.wxws.myticket","platformName":"Android","appActivity":"com.myticket.activity.WelcomeActivity","deviceUDID":"a8eaec07"}
+2017-02-08 08:35:16:668 - info: [HTTP] <-- POST /wd/hub/session 200 19971 ms - 767 
+2017-02-08 08:35:21:147 - info: [HTTP] --> GET /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/window/current/size {}
+2017-02-08 08:35:21:151 - info: [debug] [MJSONWP] Calling AppiumDriver.getWindowSize() with args: ["current","92adfcb8-6f80-4115-8bb3-56e4042f8b6c"]
+2017-02-08 08:35:21:155 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"getDeviceSize","params":{}}
+2017-02-08 08:35:21:169 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+2017-02-08 08:35:21:169 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2017-02-08 08:35:21:169 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getDeviceSize
+2017-02-08 08:35:21:196 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"height":1920,"width":1080}}
+2017-02-08 08:35:21:199 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2017-02-08 08:35:21:200 - info: [debug] [MJSONWP] Responding to client with driver.getWindowSize() result: {"height":1920,"width":1080}
+2017-02-08 08:35:21:202 - info: [HTTP] <-- GET /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/window/current/size 200 54 ms - 100 
+2017-02-08 08:35:28:638 - info: [HTTP] --> GET /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/window/current/size {}
+2017-02-08 08:35:28:641 - info: [debug] [MJSONWP] Calling AppiumDriver.getWindowSize() with args: ["current","92adfcb8-6f80-4115-8bb3-56e4042f8b6c"]
+2017-02-08 08:35:28:644 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"getDeviceSize","params":{}}
+2017-02-08 08:35:28:652 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+2017-02-08 08:35:28:653 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2017-02-08 08:35:28:655 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getDeviceSize
+2017-02-08 08:35:28:663 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"height":1920,"width":1080}}
+2017-02-08 08:35:28:664 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2017-02-08 08:35:28:665 - info: [debug] [MJSONWP] Responding to client with driver.getWindowSize() result: {"height":1920,"width":1080}
+2017-02-08 08:35:28:667 - info: [HTTP] <-- GET /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/window/current/size 200 28 ms - 100 
+2017-02-08 08:35:33:640 - info: [HTTP] --> POST /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/touch/perform {"sessionId":"92adfcb8-6f80-4115-8bb3-56e4042f8b6c","actions":[{"action":"press","options":{"y":960,"x":1060}},{"action":"wait","options":{"ms":1000}},{"action":"moveTo","options":{"y":960,"x":20}},{"action":"release","options":{}}]}
+2017-02-08 08:35:33:643 - info: [debug] [MJSONWP] Calling AppiumDriver.performTouch() with args: [[{"action":"press","options":{"y":960,"x":1060}},{"action":"wait","options":{"ms":1000}},{"action":"moveTo","options":{"y":960,"x":20}},{"action":"release","options":{}}],"92adfcb8-6f80-4115-8bb3-56e4042f8b6c"]
+2017-02-08 08:35:33:650 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"swipe","params":{"startX":1060,"startY":960,"endX":20,"endY":960,"steps":28}}
+2017-02-08 08:35:33:655 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"swipe","params":{"startX":1060,"startY":960,"endX":20,"endY":960,"steps":28}}
+2017-02-08 08:35:33:656 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2017-02-08 08:35:33:656 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: swipe
+2017-02-08 08:35:33:658 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Display bounds: [0,0][1080,1920]
+2017-02-08 08:35:33:659 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Display bounds: [0,0][1080,1920]
+2017-02-08 08:35:33:660 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Swiping from [x=1060.0, y=960.0] to [x=20.0, y=960.0] with steps: 28
+2017-02-08 08:35:34:203 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2017-02-08 08:35:34:203 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2017-02-08 08:35:34:204 - info: [debug] [MJSONWP] Responding to client with driver.performTouch() result: true
+2017-02-08 08:35:34:223 - info: [HTTP] <-- POST /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/touch/perform 200 566 ms - 76 
+2017-02-08 08:35:40:637 - info: [HTTP] --> POST /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/touch/perform {"sessionId":"92adfcb8-6f80-4115-8bb3-56e4042f8b6c","actions":[{"action":"press","options":{"y":960,"x":1060}},{"action":"wait","options":{"ms":1000}},{"action":"moveTo","options":{"y":960,"x":20}},{"action":"release","options":{}}]}
+2017-02-08 08:35:40:638 - info: [debug] [MJSONWP] Calling AppiumDriver.performTouch() with args: [[{"action":"press","options":{"y":960,"x":1060}},{"action":"wait","options":{"ms":1000}},{"action":"moveTo","options":{"y":960,"x":20}},{"action":"release","options":{}}],"92adfcb8-6f80-4115-8bb3-56e4042f8b6c"]
+2017-02-08 08:35:40:640 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"swipe","params":{"startX":1060,"startY":960,"endX":20,"endY":960,"steps":28}}
+2017-02-08 08:35:40:646 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"swipe","params":{"startX":1060,"startY":960,"endX":20,"endY":960,"steps":28}}
+2017-02-08 08:35:40:646 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2017-02-08 08:35:40:646 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: swipe
+2017-02-08 08:35:40:651 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Display bounds: [0,0][1080,1920]
+2017-02-08 08:35:40:659 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Display bounds: [0,0][1080,1920]
+2017-02-08 08:35:40:661 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Swiping from [x=1060.0, y=960.0] to [x=20.0, y=960.0] with steps: 28
+2017-02-08 08:35:41:146 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2017-02-08 08:35:41:147 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2017-02-08 08:35:41:148 - info: [debug] [MJSONWP] Responding to client with driver.performTouch() result: true
+2017-02-08 08:35:41:150 - info: [HTTP] <-- POST /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/touch/perform 200 512 ms - 76 
+2017-02-08 08:35:46:638 - info: [HTTP] --> POST /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/touch/perform {"sessionId":"92adfcb8-6f80-4115-8bb3-56e4042f8b6c","actions":[{"action":"press","options":{"y":960,"x":1060}},{"action":"wait","options":{"ms":1000}},{"action":"moveTo","options":{"y":960,"x":20}},{"action":"release","options":{}}]}
+2017-02-08 08:35:46:638 - info: [debug] [MJSONWP] Calling AppiumDriver.performTouch() with args: [[{"action":"press","options":{"y":960,"x":1060}},{"action":"wait","options":{"ms":1000}},{"action":"moveTo","options":{"y":960,"x":20}},{"action":"release","options":{}}],"92adfcb8-6f80-4115-8bb3-56e4042f8b6c"]
+2017-02-08 08:35:46:641 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"swipe","params":{"startX":1060,"startY":960,"endX":20,"endY":960,"steps":28}}
+2017-02-08 08:35:46:646 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"swipe","params":{"startX":1060,"startY":960,"endX":20,"endY":960,"steps":28}}
+2017-02-08 08:35:46:646 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2017-02-08 08:35:46:646 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: swipe
+2017-02-08 08:35:46:648 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Display bounds: [0,0][1080,1920]
+2017-02-08 08:35:46:649 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Display bounds: [0,0][1080,1920]
+2017-02-08 08:35:46:651 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Swiping from [x=1060.0, y=960.0] to [x=20.0, y=960.0] with steps: 28
+2017-02-08 08:35:47:135 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+2017-02-08 08:35:47:136 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2017-02-08 08:35:47:138 - info: [debug] [MJSONWP] Responding to client with driver.performTouch() result: true
+2017-02-08 08:35:47:140 - info: [HTTP] <-- POST /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/touch/perform 200 501 ms - 76 
+2017-02-08 08:35:53:138 - info: [HTTP] --> POST /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/element {"using":"id","sessionId":"92adfcb8-6f80-4115-8bb3-56e4042f8b6c","value":"com.wxws.myticket:id/etBecity"}
+2017-02-08 08:35:53:138 - info: [debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.wxws.myticket:id/etBecity","92adfcb8-6f80-4115-8bb3-56e4042f8b6c"]
+2017-02-08 08:35:53:140 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2017-02-08 08:35:53:142 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2017-02-08 08:35:53:143 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2017-02-08 08:35:53:146 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.wxws.myticket:id/etBecity","context":"","multiple":false}}
+2017-02-08 08:35:53:162 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.wxws.myticket:id/etBecity","context":"","multiple":false}}
+2017-02-08 08:35:53:162 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2017-02-08 08:35:53:162 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2017-02-08 08:35:53:163 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.wxws.myticket:id/etBecity' using 'ID' with the contextId: '' multiple: false
+2017-02-08 08:35:53:165 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.wxws.myticket:id/etBecity]
+2017-02-08 08:35:53:178 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-02-08 08:35:53:183 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.wxws.myticket:id/etBecity' using 'ID' with the contextId: '' multiple: false
+2017-02-08 08:35:53:184 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.wxws.myticket:id/etBecity]
+2017-02-08 08:35:53:190 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2017-02-08 08:35:53:191 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2017-02-08 08:35:53:193 - info: [HTTP] <-- POST /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/element 500 55 ms - 164 
+2017-02-08 08:35:58:140 - info: [HTTP] --> POST /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/element {"using":"id","sessionId":"92adfcb8-6f80-4115-8bb3-56e4042f8b6c","value":"com.wxws.myticket:id/etBecity"}
+2017-02-08 08:35:58:140 - info: [debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","com.wxws.myticket:id/etBecity","92adfcb8-6f80-4115-8bb3-56e4042f8b6c"]
+2017-02-08 08:35:58:142 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2017-02-08 08:35:58:143 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2017-02-08 08:35:58:146 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2017-02-08 08:35:58:147 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.wxws.myticket:id/etBecity","context":"","multiple":false}}
+2017-02-08 08:35:58:154 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.wxws.myticket:id/etBecity","context":"","multiple":false}}
+2017-02-08 08:35:58:154 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2017-02-08 08:35:58:155 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2017-02-08 08:35:58:155 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.wxws.myticket:id/etBecity' using 'ID' with the contextId: '' multiple: false
+2017-02-08 08:35:58:156 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.wxws.myticket:id/etBecity]
+2017-02-08 08:35:58:160 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2017-02-08 08:35:58:161 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'com.wxws.myticket:id/etBecity' using 'ID' with the contextId: '' multiple: false
+2017-02-08 08:35:58:162 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.wxws.myticket:id/etBecity]
+2017-02-08 08:35:58:168 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":7,"value":"No element found"}
+2017-02-08 08:35:58:169 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2017-02-08 08:35:58:172 - info: [HTTP] <-- POST /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/element 500 32 ms - 164 
+2017-02-08 08:36:05:139 - info: [HTTP] --> GET /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/screenshot {}
+2017-02-08 08:36:05:139 - info: [debug] [MJSONWP] Calling AppiumDriver.getScreenshot() with args: ["92adfcb8-6f80-4115-8bb3-56e4042f8b6c"]
+2017-02-08 08:36:05:142 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:36:05:173 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:36:05:173 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","/system/bin/rm","/data/local/tmp/screenshot.png;","/system/bin/screencap","-p","/data/local/tmp/screenshot.png"]
+2017-02-08 08:36:08:284 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","pull","/data/local/tmp/screenshot.png","C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\appium11718-16884-1djqmzt.png"]
+2017-02-08 08:36:08:545 - info: [debug] [ADB] Device API level: 23
+2017-02-08 08:36:08:764 - info: [debug] [MJSONWP] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABDgAAAeACAYAAAArYecKAACAAElEQVR4AezBC7zXdWE//tfnfQ6c0+GiI0TDZGhKCoRHVPLWxWrlyi66zZxFLkVTy1sy8zY17TEvS+bPEpOUmuuie5SYlT8rt0wNdSkCQ2SaiWhmTklQ7nA+/337/89v/PirqZDywefzWSWpAwAAANBgJQAAAAANVwIAAADQcCUAAAAADVcCAAAA0HAlAAAAAA1XAgAAANBwJQAAAAANVwIAAADQcCUAAAAADVcCAAAA0HAlAAAAAA1XAgAAANBwJQAAAAANVwIAAADQcCUAAABslPr375/+/fuHjU9VVRkzZkzYeLRnE9fe3p7Vq1cHAABgY1RKyZvf/Obsvvvu2XHHHfOnf/qn2XrrrdO/f/+s7Zlnnsmvf/3rLFiwIHPnzs1dd92V+++/Pz09PeGVd9BBB2XJkiWZPXt22DhUSepsotrb2/P9738/bW1t+e1vf5tPf/rTWbx4cQAAAF5to0aNygc+8IG8733vy2abbZaXY+HChfnxj3+cH/7wh7nvvvvCK2P48OG56qqrsv/++2fx4sXZkIYNG5Z3vvOd2WOPPbLddttls802S58+fdJEq1atyqJFi/KrX/0qd9xxR26++eYsWLAgfyzt2YT9+Z//ebbYYou0/PKXv8zixYuzKRs2bFi222679OvXL0uWLMnDDz+chx56KC/XVlttle222y6bb755Fi5cmFmzZmXZsmUBAABevr322iuHHXZYuru7s74GDRqUgw8+OAcffHBmzJiRK6+8MnfeeWdeK0aOHJm/+7u/y+LFi/OpT30qr4S2tracc845uf/++7N48eJsKGPHjs3RRx+dXXbZJZuKPn36ZPDgwRk8eHDGjRuX4447Lvfcc08uu+yyzJgxIxtaezagU045JePGjcsr4Utf+lJ++tOf5oW8973vTa/rrrsur6YDDzwwxx9/fFqOOeaY3HvvvdlQPvnJT+aDH/xgttlmm1RVlbX9...
+2017-02-08 08:36:08:776 - info: [HTTP] <-- GET /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/screenshot 200 3635 ms - 260902 
+2017-02-08 08:36:13:139 - info: [HTTP] --> GET /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/ime/available_engines {}
+2017-02-08 08:36:13:142 - info: [debug] [MJSONWP] Calling AppiumDriver.availableIMEEngines() with args: ["92adfcb8-6f80-4115-8bb3-56e4042f8b6c"]
+2017-02-08 08:36:13:145 - info: [debug] [AndroidDriver] Retrieving available IMEs
+2017-02-08 08:36:13:146 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:36:13:183 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:36:13:184 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","ime","list","-a"]
+2017-02-08 08:36:15:000 - info: [debug] [AndroidDriver] Engines: ["com.sohu.inputmethod.sogou.xiaomi/.SogouIME","com.baidu.input_mi/.ImeService","io.appium.android.ime/.UnicodeIME","com.qihoo.appstore/com.qihoo360.mobilesafe.pcinput.HandoffIme"]
+2017-02-08 08:36:15:001 - info: [debug] [MJSONWP] Responding to client with driver.availableIMEEngines() result: ["com.sohu.inputmethod.sogou.xiaomi/.SogouIME","com.baidu.input_mi/.ImeService","io.appium.android.ime/.UnicodeIME","com.qihoo.appstore/com.qihoo360.mobilesafe.pcinput.HandoffIme"]
+2017-02-08 08:36:15:005 - info: [HTTP] <-- GET /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/ime/available_engines 200 1864 ms - 252 
+2017-02-08 08:36:19:640 - info: [HTTP] --> POST /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/ime/activate {"engine":"com.sohu.inputmethod.sogou.xiaomi/.SogouIME","sessionId":"92adfcb8-6f80-4115-8bb3-56e4042f8b6c"}
+2017-02-08 08:36:19:645 - info: [debug] [MJSONWP] Calling AppiumDriver.activateIMEEngine() with args: ["com.sohu.inputmethod.sogou.xiaomi/.SogouIME","92adfcb8-6f80-4115-8bb3-56e4042f8b6c"]
+2017-02-08 08:36:19:651 - info: [debug] [AndroidDriver] Attempting to activate IME com.sohu.inputmethod.sogou.xiaomi/.SogouIME
+2017-02-08 08:36:19:652 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:36:19:703 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:36:19:703 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","ime","list","-a"]
+2017-02-08 08:36:21:573 - info: [debug] [AndroidDriver] Found installed IME, attempting to activate
+2017-02-08 08:36:21:574 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:36:21:628 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:36:21:628 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","ime","enable","com.sohu.inputmethod.sogou.xiaomi/.SogouIME"]
+2017-02-08 08:36:23:494 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:36:23:544 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:36:23:544 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","ime","set","com.sohu.inputmethod.sogou.xiaomi/.SogouIME"]
+2017-02-08 08:36:25:339 - info: [debug] [MJSONWP] Responding to client with driver.activateIMEEngine() result: null
+2017-02-08 08:36:25:341 - info: [HTTP] <-- POST /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c/ime/activate 200 5700 ms - 76 
+2017-02-08 08:36:30:139 - info: [HTTP] --> DELETE /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c {}
+2017-02-08 08:36:30:140 - info: [debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["92adfcb8-6f80-4115-8bb3-56e4042f8b6c"]
+2017-02-08 08:36:30:146 - info: [debug] [AndroidDriver] Shutting down Android driver
+2017-02-08 08:36:30:150 - info: [debug] [AndroidDriver] Resetting IME to com.sohu.inputmethod.sogou.xiaomi/.SogouIME
+2017-02-08 08:36:30:151 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:36:30:201 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:36:30:201 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","ime","set","com.sohu.inputmethod.sogou.xiaomi/.SogouIME"]
+2017-02-08 08:36:31:479 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:36:31:525 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:36:31:525 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","am","force-stop","com.wxws.myticket"]
+2017-02-08 08:36:33:473 - info: [debug] [ADB] Pressing the HOME button
+2017-02-08 08:36:33:474 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:36:33:531 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:36:33:532 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","input","keyevent",3]
+2017-02-08 08:36:34:722 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+2017-02-08 08:36:34:728 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+2017-02-08 08:36:34:729 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+2017-02-08 08:36:34:729 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+2017-02-08 08:36:34:729 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2017-02-08 08:36:34:730 - info: [debug] [UiAutomator] Shutting down UiAutomator
+2017-02-08 08:36:34:730 - info: [debug] [UiAutomator] Moving to state 'stopping'
+2017-02-08 08:36:34:731 - info: [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+2017-02-08 08:36:34:732 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2017-02-08 08:36:34:732 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+2017-02-08 08:36:34:732 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2017-02-08 08:36:34:732 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2017-02-08 08:36:34:733 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2017-02-08 08:36:34:733 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+2017-02-08 08:36:34:733 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+2017-02-08 08:36:34:734 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=
+2017-02-08 08:36:34:734 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] Test results for WatcherResultPrinter=.
+2017-02-08 08:36:34:734 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] Time: 81.421
+2017-02-08 08:36:34:735 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] OK (1 test)
+2017-02-08 08:36:34:735 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+2017-02-08 08:36:34:738 - info: [debug] [UiAutomator] UiAutomator shut down normally
+2017-02-08 08:36:34:739 - info: [debug] [UiAutomator] Moving to state 'stopped'
+2017-02-08 08:36:34:740 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2017-02-08 08:36:34:740 - info: [debug] [ADB] Getting all processes with uiautomator
+2017-02-08 08:36:34:741 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:36:34:773 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:36:34:774 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","ps"]
+2017-02-08 08:36:34:899 - info: [ADB] No uiautomator process found to kill, continuing...
+2017-02-08 08:36:34:900 - info: [debug] [UiAutomator] Moving to state 'stopped'
+2017-02-08 08:36:34:900 - info: [debug] [ADB] Getting connected devices...
+2017-02-08 08:36:34:935 - info: [debug] [ADB] 1 device(s) connected
+2017-02-08 08:36:34:937 - info: [debug] [ADB] Running 'D:\Program Files\adt-bundle-windows-x86_64-20140702\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","a8eaec07","shell","am","force-stop","io.appium.unlock"]
+2017-02-08 08:36:36:096 - info: [debug] [Logcat] Stopping logcat capture
+2017-02-08 08:36:36:102 - info: [debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+2017-02-08 08:36:36:102 - info: [Appium] Removing session 92adfcb8-6f80-4115-8bb3-56e4042f8b6c from our master session list
+2017-02-08 08:36:36:103 - info: [debug] [MJSONWP] Received response: null
+2017-02-08 08:36:36:103 - info: [debug] [MJSONWP] But deleting session, so not returning
+2017-02-08 08:36:36:104 - info: [debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+2017-02-08 08:36:36:105 - info: [HTTP] <-- DELETE /wd/hub/session/92adfcb8-6f80-4115-8bb3-56e4042f8b6c 200 5966 ms - 76 

@@ -1,0 +1,26 @@
+[2017-02-08 16:20:04] [INFO] +PASS+  找到"com.wxws.myticket:id/etBecity"元素
+[2017-02-08 16:20:09] [INFO] +PASS+  截图成功！保存在D:\screen\fff.png
+[2017-02-08 16:20:09] [INFO] +PASS+  找到"com.wxws.myticket:id/etBecity"元素
+[2017-02-08 16:20:14] [INFO] +PASS+  点击"com.wxws.myticket:id/etBecity"元素成功，已保存截图
+[2017-02-08 16:20:14] [INFO] +PASS+  找到"com.wxws.myticket:id/etSearch"元素
+[2017-02-08 16:20:24] [INFO] +PASS+  输入"深圳"成功，已保存截图
+[2017-02-08 16:20:24] [INFO] +PASS+  找到"android.widget.TextView"元素
+[2017-02-08 16:20:29] [INFO] +PASS+  点击第1个"android.widget.TextView"元素成功，已保存截图
+[2017-02-08 16:20:29] [INFO] +PASS+  找到"com.wxws.myticket:id/etEncity"元素
+[2017-02-08 16:20:34] [INFO] +PASS+  点击"com.wxws.myticket:id/etEncity"元素成功，已保存截图
+[2017-02-08 16:20:34] [INFO] +PASS+  找到"android.widget.TextView"元素
+[2017-02-08 16:20:39] [INFO] +PASS+  点击第1个"android.widget.TextView"元素成功，已保存截图
+[2017-02-08 16:20:39] [INFO] +PASS+  找到"com.wxws.myticket:id/etSearch"元素
+[2017-02-08 16:20:49] [INFO] +PASS+  输入"广州"成功，已保存截图
+[2017-02-08 16:20:49] [INFO] +PASS+  找到"android.widget.TextView"元素
+[2017-02-08 16:20:53] [INFO] +PASS+  点击第1个"android.widget.TextView"元素成功，已保存截图
+[2017-02-08 16:20:54] [INFO] +PASS+  找到"com.wxws.myticket:id/etEncity"元素
+[2017-02-08 16:20:55] [INFO] +PASS+  获取==="[u'com.sohu.inputmethod.sogou.xiaomi/.SogouIME', u'com.baidu.input_mi/.ImeService', u'io.appium.android.ime/.UnicodeIME', u'com.qihoo.appstore/com.qihoo360.mobilesafe.pcinput.HandoffIme']"===安卓可用的输入法成功，已返回结果
+[2017-02-08 16:33:43] [INFO] +PASS+  向左滑动0次成功！
+[2017-02-08 16:33:48] [INFO] +PASS+  向左滑动1次成功！
+[2017-02-08 16:33:54] [INFO] +PASS+  向左滑动2次成功！
+[2017-02-08 16:34:20] [INFO] +PASS+  获取==="[u'com.sohu.inputmethod.sogou.xiaomi/.SogouIME', u'com.baidu.input_mi/.ImeService', u'io.appium.android.ime/.UnicodeIME', u'com.qihoo.appstore/com.qihoo360.mobilesafe.pcinput.HandoffIme']"===安卓可用的输入法成功，已返回结果
+[2017-02-08 16:35:35] [INFO] +PASS+  向左滑动1次成功！
+[2017-02-08 16:35:42] [INFO] +PASS+  向左滑动2次成功！
+[2017-02-08 16:35:48] [INFO] +PASS+  向左滑动3次成功！
+[2017-02-08 16:36:15] [INFO] +PASS+  获取==="[u'com.sohu.inputmethod.sogou.xiaomi/.SogouIME', u'com.baidu.input_mi/.ImeService', u'io.appium.android.ime/.UnicodeIME', u'com.qihoo.appstore/com.qihoo360.mobilesafe.pcinput.HandoffIme']"===安卓可用的输入法成功，已返回结果
