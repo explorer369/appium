@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "G:/AutoTest/appium/autoAPPiumGBKdabao/runCase.py", line 89, in <module>
+    Initialization.stop_Appium('http://localhost:4723/wd/hub')
+  File "G:\AutoTest\appium\autoAPPiumGBKdabao\bin\Initialization.py", line 108, in stop_Appium
+    p = ''.join(p).split('LISTENING')[1].split()[0].strip()#以LISTENING来判断真正的PID，避免TIME_WAIT或ESTABLISHED状态
+IndexError: list index out of range

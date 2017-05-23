@@ -1,0 +1,281 @@
+1.支持所有获取控件的方法（name,class_name,css,id,link,partial_link,tag,xpath）
+用法：self.func('name','addLink')
+
+2.同名多控件获取方法（class_names，elements_css，ids，links，names，partial_links，tags，xpaths）
+用法：self.func('names','addLink')   #不写时默认取第一个
+用法：self.func('names','addLink'，1)或 self.func('names','addLink'，number=1)   #这里取第二个（从0开始计算）
+
+3.配置文件的使用方法
+[AssertionMode]
+command:assert     【verify跳过 assert中止】解释：设为verify时，如遇到未找某控件，会继续执行后面的每一个歩骤
+                                                  设为assert时，如遇到未找到某控件，则此用例结果为失改，跳过此用例，继续执行下一条用例
+                                                  
+4.滑动滚动条到底部
+用法：
+self.scroll_foot()
+
+
+
+5.滑动滚动条到顶部
+用法：self.scroll_top()
+
+6.聚焦元素
+用法：self.scroll_element('id','allSelect_input')
+
+7.点击元素下滑
+用法：self.click_scroll_element('id','idlog',1)
+解释：id:控件的类型
+      idlog:控件的值
+      1：表示点击次数（1代表1次）
+      
+8.获取日期
+days = gettime.getdays(1,'%Y-%m-%d') 
+用法：days  （当作一个参数即可）
+解释：1，表示当前时间加多少天   例：当前时间为2016-12-5   那么：days=2016-12-6
+%Y-%m-%d: 表示格式，可自定义
+
+9.获取数据库内容
+InitMySqldb.MySqldb(sql)
+InitMySqldb.MySqldb("select * ")
+
+一，单个元素控件时
+9.直接在输入框内输入内容
+self.func('id',"name",send_keys=u"姚耀开")
+
+10.#获取元素的文本值
+self.func('id',"startLogin"，get_element='text')
+
+11.#清除输入框的文本值
+self.func('id',"startLogin"，get_element='clear')
+
+12. #获取元素坐标
+self.func('id',"startLogin"，get_element='location')
+
+13.#提交表单
+self.func('id',"startLogin"，get_element='submit')
+
+14.#获取CSS的属性值
+self.func('id',"startLogin"，get_element='css_name')
+
+15.#获取元素的属性值
+self.func('id',"startLogin"，get_element='get_attribute')
+
+16. #判断元素是否被选中
+self.func('id',"startLogin"，get_element='is_selected')
+
+17. #返回元素的大小
+self.func('id',"startLogin"，get_element='size')
+
+18.#判断元素是否显示
+self.func('id',"startLogin"，get_element='is_displayed')
+
+19.#判断元素是否被使用
+self.func('id',"startLogin"，get_element='is_enabled')
+
+20.#返回元素的tagName
+self.func('id',"startLogin"，get_element='tagName')
+
+21. #右击元素
+self.func('id',"startLogin"，get_element='context_click')
+
+22.#双击元素
+self.func('id',"startLogin"，get_element='double_click')
+
+23.#鼠标悬停在一个元素上
+self.func('id',"startLogin"，get_element='move_to_element')
+
+24.#选择下拉框里的内容
+self.func('id',"startLogin"，get_element='select',number=1)  #选择第几个
+self.func('id',"startLogin"，get_element='select',select_keys=u'深圳') #直接选择对应的文本
+
+self.func('id',"startLogin",send_keys=u'深圳')
+
+25.回到顶部
+self.scroll_top()  #须导入模块
+
+
+26.拉到底部
+self.scroll_foot()  #须导入模块
+
+
+27.聚焦元素
+self.scroll_element()   #须导入模块
+self.func("id","isdfs",get_element='scroll_element') #不用导入模块
+
+28.点击元素下滑
+self.click_scroll_element("id","isdfs",number=1)  #须导入模块
+
+29.按键操作
+#单键
+self.func('id',"name",send_keys=Keys.ENTER)
+#双键
+self.func('id',"name",send_keys=(Keys.CONTROL,'x')) #剪切
+self.func('id',"name",send_keys=(Keys.CONTROL,'v')) #粘贴
+self.func('id',"name",send_keys=(Keys.CONTROL,'a')) #全选
+#三键
+self.func('id',"name",send_keys=(Keys.SHIFT+Keys.ALT+Keys.UP))
+
+30.去除只读属性
+self.func('css',"input[name='outBusStartTime']"，get_element='readonly') #只能用CSS属性
+
+31.去除只读属性并赋值
+self.func('css',"input[name='outBusStartTime']"，get_element='readonly'，send_keys='2016-12-14') #只能用CSS属性
+
+
+二，多个元素控件时(number=0 表示取第几个元素控件)
+1.#获取元素的文本值
+self.func('ids',"startLogin",number=0,get_element='text')
+
+2.#清除输入框的文本值
+self.func('ids',"startLogin",number=0,get_element='clear')
+
+3. #获取元素坐标
+self.func('ids',"startLogin",number=0,get_element='location')
+
+4.#提交表单
+self.func('ids',"startLogin",number=0,get_element='submit')
+
+5.#获取CSS的属性值
+self.func('ids',"startLogin",number=0,get_element='css_name')
+
+6.#获取元素的属性值
+self.func('ids',"startLogin",number=0,get_element='get_attribute')
+
+7. #判断元素是否被选中
+self.func('ids',"startLogin",number=0,get_element='is_selected')
+
+8. #返回元素的大小
+self.func('ids',"startLogin",number=0,get_element='size')
+
+9.#判断元素是否显示
+self.func('ids',"startLogin",number=0,get_element='is_displayed')
+
+10.#判断元素是否被使用
+self.func('ids',"startLogin",number=0,get_element='is_enabled')
+
+11.#返回元素的tagName
+self.func('ids',"startLogin",number=0,get_element='tagName')
+
+12. #右击元素
+self.func('ids',"startLogin",number=0,get_element='context_click')
+
+13.#双击元素
+self.func('ids',"startLogin",number=0,get_element='double_click')
+
+14.#鼠标悬停在一个元素上
+self.func('ids',"startLogin",number=0,get_element='move_to_element')
+
+15.#选择下拉框里的内容
+self.func('ids',"startLogin",number=0,get_element='select',select_keys=u'深圳') #直接选择对应的文本
+self.func('ids',"startLogin",number=0,get_element='select_down',nb=1)
+
+16.直接在输入框内输入内容   #多个元素控件时选择第1个控件输入
+self.func('ids',"name",number=0,send_keys=u"姚耀开")
+
+17.多个元素控件时聚焦元素
+self.func("ids","isdfs",number=0,get_element='scroll_element')
+
+
+
+ 注意：
+ 1.用例名为：test_  开头
+ 
+ 2.火狐浏览器默认安装即可
+ 
+ 
+ 3.      self.func('name',u"中文")   中文前面要加上小写的u
+ 
+ 4.脚本保存为ASCII
+ 
+ 9.
+  self.func('xpath',"//div[@id='bdmapbox']/div[2]/div[2]/div/select",number=1,getelement='select')
+ self.func('xpath',"//div[@id='bdmapbox']/div[2]/div[2]/div/select",getelement='select',select_keys=u"北京市")
+ 
+ 以上selenium方法保留
+ 
+ appium新增方法
+ 1.#返回当前会话中的上下文，使用后可以识H5页面的控件
+ self.func(get_element='contexts')
+ 
+ 2.#返回当前会话中的上下文，使用后可以识H5页面的控件
+ self.func(get_element='current_context')
+ 
+ 3.#重置应用（类似删除应用数据）
+ self.func(get_element='reset')
+ 
+ 4.#隐藏键盘（IOS使用key_name隐藏，安卓不使用参数）
+ self.func(get_element='hide_keyboard')
+ 
+ 5.#返回当前会话中的上下文，使用后可以识H5页面的控件
+ self.func(get_element='current_activity')
+ 
+ 6.#摇一摇手机
+ self.func(get_element='shake')
+ 
+ 7.#打开系统通知栏
+ self.func(get_element='open_notifications')
+ 
+ 8.#返回网络类型数值
+ self.func(get_element='network_connection')
+ 
+ 9.#返回安卓设备可用的输入法
+ self.func(get_element='available_ime_engines')
+ 
+ 10.#检查安卓设备是否输入法服务活动
+ self.func(get_element='is_ime_active')
+ 
+ 11.#关闭安卓当前的输入法
+ self.func(get_element='deactivate_ime_engine')
+ 
+ 12.#返回当前输入法的包名
+ self.func(get_element='active_ime_engine')
+ 
+ 13.#打开安卓设备上的位置定位设置
+ self.func(get_element='toggle_location_services')
+ 
+ 14.#获取当前页面的网址
+ self.func(get_element='current_url')
+ 
+ 15.#返回当前页面的源
+ self.func(get_element='page_source')
+
+ 16.#将元素1滚动到目标元素2
+ self.func("id","com.wxws.myticket:id/tv_ticket_cjkx","id","com.wxws.myticket:id/etBecity",get_element='scroll')
+
+ 17.#从元素1拖动到元素2
+ self.func("id","com.wxws.myticket:id/tv_ticket_cjkx","id","com.wxws.myticket:id/etBecity",get_element='drag_and_drop')
+
+ 18.#从A点滑动至B点，滑动时间为毫秒
+ self.func('1000','1000','20','1000',times=500,get_element='swipe',nb=4)
+
+ 19.#按住A坐标点后快速滑动至B坐标点
+ self.func('1000','1000','20','1000',get_element='flick')
+
+ 20.#设置设备的经纬度
+ self.func('1000','1000','20',get_element='set_location')
+
+ 21.#打开安卓设备上的位置定位设置
+ self.func(get_element='toggle_location_services')
+
+ 22.上下左右滑动（number=3,times=1000此两参数可省略）
+SettingDevice.scroll(self,'up',number=3,times=1000)  #向上滑动屏幕
+SettingDevice.scroll(self,'down',number=3,times=1000)  #向上滑动屏幕
+SettingDevice.scroll(self,'left',number=3,times=1000)  #向上滑动屏幕
+SettingDevice.scroll(self,'right',number=3,times=1000)  #向上滑动屏幕
+
+23.content-desc方法(app专用）
+self.func("desc",u"退票说明")
+
+24.添加判断toast消息（注：模式需换为UiAutomator2，当UiAutomator2时多元素取值永远为第一个，请特注意）
+#用法：find_toast(self,By.XPATH,"id")(By有以下方法：CLASS_NAME,CSS_SELECTOR,ID,LINK_TEXT,NAME,PARTIAL_LINK_TEXT,TAG_NAME,XPATH)
+
+25.局部控件截图 (name默认为0，name默认为image,此两参数可以省略不传)
+SettingDevice.get_element_screen(self,"id","com.wxws.myticket:id/etBecity",name="image")  #截图控件图片
+SettingDevice.get_element_screen(self,"ids","com.wxws.myticket:id/etBecity",number=1,name="image")  #截图控件图片
+
+26.截图对比(screen_path默认为image)
+用法：SettingDevice.test_same_as(self,"id","com.wxws.myticket:id/etBecity",percent=100,screen_path="D:\\screen\\image.png")  #percent表示100%相似(相)
+SettingDevice.test_same_as(self,"ids","com.wxws.myticket:id/etBecity",number=1,percent=100,screen_path="D:\\screen\\image.png")
+
+27.图片文字识别 (screen_path默认为image)
+用法：print OCR.picture_text(screen_path=r"D:\\screen\\image.png")

@@ -1,0 +1,17 @@
+# 设置未找到元素时是否继续执行，verify跳过 assert中止,当设为verify时用例下一点要添加断言，否则结果显示为PASS(断言方法self.assertNotEqual(self.driver.find_element_by_xpath(TEXT),TEXT))
+[AssertionMode]
+command:verify
+
+[database]
+host:192.168.1.123
+port:3306
+dbname:db_account_center
+user:root
+password:PW57-mysql
+charset:utf8
+
+[chromepath]
+chromepath:C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe
+
+[excelpath]
+excelpath:data111.xls
