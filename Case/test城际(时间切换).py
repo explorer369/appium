@@ -1,0 +1,52 @@
+# -*- coding:GBK
+import logging,os,sys,time,unittest,xlrd,re
+import APP_InitLogin,SettingDevice,log,openexcel,AdbTool,InitMySqldb,Initialization
+reload(sys)
+sys.setdefaultencoding('GBK')
+class AndroidTest(unittest.TestCase):
+    func = getattr(__import__('find'),'find_name')  
+    def setUp(self):
+        SettingDevice.Setting_device(self)
+        self.listdata = openexcel.excel_table_byindex('app_data.xls',0)   #登录账号表
+        self.listdata_chengshi = openexcel.excel_table_byindex('data.xls',0) #搜索城市表
+    def tearDown(self):
+        try:
+            Typewriting = self.func(get_element='available_ime_engines') #获取手机中可用的输入法列表
+            self.driver.activate_ime_engine(Typewriting[0])              #切换输入法为第一个输入法
+        except Exception,e:
+            print e
+        #self.driver.close_app()
+        self.driver.quit()       #执行完退出后相当于重置了应用（清除了应用数据）
+    def test12309click(self):
+        listdata = self.listdata   
+        listdata_chengshi = self.listdata_chengshi
+        print u"========【检查切换城市】============="
+        if(len(listdata) <= 0 ):
+            assert 0,u"Excel数据库异常"
+        for i in range(0,int(len(listdata))):
+            print 'Excel中共有：%s 行数据'%(len(listdata))
+            APP_InitLogin.huanyingye(self)      #处理欢印页
+            self.func("id","com.wxws.myticket:id/tv_ticket_cjkx")  #点击城际快线
+            self.func("id","com.wxws.myticket:id/etBecity")  #出发地
+            self.func('id',"com.wxws.myticket:id/etSearch",send_keys=listdata_chengshi[i]['username'])
+            self.func('class_names','android.widget.TextView',1)   #选择第一个
+            self.func("id","com.wxws.myticket:id/etEncity")        #到达城市
+            self.func('id',"com.wxws.myticket:id/etSearch",send_keys=listdata_chengshi[i]['password'])
+            self.func('class_names','android.widget.TextView',1)  #选择第一个
+            #self.func("id","layout_departure_time")    #点击时间框
+            #self.func("xpath",u"//android.widget.TextView[@text='后天']")                   #选择第一个20号(中文一定要加u,要加到最前面才行)
+            self.func("id","com.wxws.myticket:id/btnQuery")       #点击查询
+            print u"===【线路列表页检查点击前一天、后一天】==="
+            Initialtime1 = self.func('id',"com.wxws.myticket:id/tvCurDay",get_element="text")
+            Initialtime = "".join(re.findall("\d",Initialtime1))    #提取时间数字
+            self.func("id","com.wxws.myticket:id/tvNextDay")  #点击后一天
+            houtime1 = self.func('id',"com.wxws.myticket:id/tvCurDay",get_element="text")
+            houtime = "".join(re.findall("\d",houtime1))
+            if int(houtime) == (int(Initialtime) + 1): #当前比初始日期
+                print(u"点击后一天正常,点击前为:%s,点吉后为:%s"%(Initialtime1,houtime1))
+
+            self.func("id","com.wxws.myticket:id/tvPrevDay")  #点击前一天
+            houtime3 = self.func('id',"com.wxws.myticket:id/tvCurDay",get_element="text")
+            houtime2 = "".join(re.findall("\d",houtime3))
+            if (int(houtime)-1) == int(houtime2) :
+                print(u"点击前一天正常,点击前为:%s,点击后为:%s"%(houtime1,houtime3))
