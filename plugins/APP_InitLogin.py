@@ -5,28 +5,29 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 def huanyingye(self):
-    try:  #¹Ø±Õ»î¶¯µ¯´°
-        while self.func('xpath',"//android.widget.ImageView[@index='0']",get_element='is_displayed') == True:  #ÏÈÅĞ¶ÏÔªËØÊÇ·ñ¿É¼û£¬´¦Àí³öÏÖ¼ÓÔØÖĞ
-            #self.func('1000','1000','20','1000',times=500,get_element='swipe',nb=3)   #Ïò×ó»¬¶¯3´Î
+    try:  #å…³é—­æ´»åŠ¨å¼¹çª—
+        while self.func('xpath',"//android.widget.ImageView[@index='0']",get_element='is_displayed') == True:  #å…ˆåˆ¤æ–­å…ƒç´ æ˜¯å¦å¯è§ï¼Œå¤„ç†å‡ºç°åŠ è½½ä¸­
+            #self.func('1000','1000','20','1000',times=500,get_element='swipe',nb=3)   #å‘å·¦æ»‘åŠ¨3æ¬¡
             SettingDevice.scroll(self,'left',number=3,times=500)
-            self.func('id',"com.wxws.myticket:id/imgOpen")                            #Á¢¼´ÌåÑé
-            break                                                                    #Ö´ĞĞºóÌø³öÑ­»·
+            self.func('id',"com.wxws.myticket:id/imgOpen")                            #ç«‹å³ä½“éªŒ
+            break                                                                    #æ‰§è¡Œåè·³å‡ºå¾ªç¯
         else:
             time.sleep(0.5)
     except Exception,e:
         pass
-    try:  #¹Ø±ÕÏÂÔØAPPµ¯´°
+    try:  #å…³é—­ä¸‹è½½APPå¼¹çª—
         time.sleep(3)
-        if self.func('ids',"com.wxws.myticket:id/tabView",get_element='is_displayed') == False:   #ÕÒ²»µ½¹ºÆ±°´Å¥ËµÃ÷ÓĞµ¯´°
-            self.driver.keyevent('4')   #°´·µ»Ø¼üÈ¡Ïûµ¯¿ò
+        if self.func('ids',"com.wxws.myticket:id/tabView",get_element='is_displayed') == False:   #æ‰¾ä¸åˆ°è´­ç¥¨æŒ‰é’®è¯´æ˜æœ‰å¼¹çª—
+            self.driver.keyevent('4')   #æŒ‰è¿”å›é”®å–æ¶ˆå¼¹æ¡†
     except Exception,e:
         pass
 def init_login(self,i,listdata):
     for g in range(1,2):
-        huanyingye(self)   #´¦Àí»¶Ó­Ò³ºÍµ¯´°
-        self.func('id',"com.wxws.myticket:id/tvMytext")          #¸öÈË
-        self.func('id',"com.wxws.myticket:id/layout_top_login")  #µÇÂ¼°´Å¥
+        huanyingye(self)   #å¤„ç†æ¬¢è¿é¡µå’Œå¼¹çª—
+        self.func('id',"com.wxws.myticket:id/tvMytext")          #ä¸ªäºº
+        self.func('id',"com.wxws.myticket:id/layout_top_login")  #ç™»å½•æŒ‰é’®
         def intstrusername():
+            #å¤„ç†excelæ–‡æ¡£è¯»å–è½¬æ¢ä¸ºint
             try:
                 username = listdata[i]['username']
                 username = int(username)
@@ -35,6 +36,7 @@ def init_login(self,i,listdata):
                 username = listdata[i]['username']
                 return username
         def intstrpassword():
+            #å¤„ç†excelæ–‡æ¡£è¯»å–è½¬æ¢ä¸ºint
             try:
                 password = listdata[i]['password']
                 password = int(password)
@@ -45,14 +47,14 @@ def init_login(self,i,listdata):
         username = intstrusername()
         password = intstrpassword()
         print username,password
-        self.func('id',"com.wxws.myticket:id/user_name",send_keys='18975428751')
-        self.func('id',"com.wxws.myticket:id/pwd",send_keys='881218')
+        self.func('id',"com.wxws.myticket:id/user_name",send_keys=username)
+        self.func('id',"com.wxws.myticket:id/pwd",send_keys=password)
         self.func('id',"com.wxws.myticket:id/login")
         try:
-            #self.func('name',u"»¶Ó­À´µ½12308Æû³µÆ±")# ÕâÑù¾Íµã»÷½øÈ¥ÁË
-            #WebDriverWait(self.driver,3).until(lambda x: x.find_element_by_xpath("//*[contains(.,'»¶Ó­À´µ½')]"))
-            self.func('ids','com.wxws.myticket:id/tabView')   #µã»÷¹ºÆ±
+            #self.func('name',u"æ¬¢è¿æ¥åˆ°12308æ±½è½¦ç¥¨")# è¿™æ ·å°±ç‚¹å‡»è¿›å»äº†
+            #WebDriverWait(self.driver,3).until(lambda x: x.find_element_by_xpath("//*[contains(.,'æ¬¢è¿æ¥åˆ°')]"))
+            self.func('ids','com.wxws.myticket:id/tabView')   #ç‚¹å‡»è´­ç¥¨
             break
         except:
-            self.driver.keyevent('4')  #·µ»Øµ½µÇÂ¼Ò³
+            self.driver.keyevent('4')  #è¿”å›åˆ°ç™»å½•é¡µ
             continue
