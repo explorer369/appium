@@ -267,7 +267,9 @@ SettingDevice.scroll(self,'right',number=3,times=1000)  #向上滑动屏幕
 self.func("desc",u"退票说明")
 
 24.添加判断toast消息（注：模式需换为UiAutomator2，当UiAutomator2时多元素取值永远为第一个，请特注意）
+调试时的环境：appium1.6.3 UiAutomator2模式
 #用法：find_toast(self,By.XPATH,"id")(By有以下方法：CLASS_NAME,CSS_SELECTOR,ID,LINK_TEXT,NAME,PARTIAL_LINK_TEXT,TAG_NAME,XPATH)
+SettingDevice.find_toast(self,By.XPATH,u".//*[contains(@text,'验证码不正确')]") 
 
 25.局部控件截图 (name默认为0，name默认为image,此两参数可以省略不传)
 SettingDevice.get_element_screen(self,"id","com.wxws.myticket:id/etBecity",name="image")  #截图控件图片
