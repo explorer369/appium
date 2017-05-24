@@ -1,281 +1,284 @@
-1.Ö§³ÖËùÓĞ»ñÈ¡¿Ø¼şµÄ·½·¨£¨name,class_name,css,id,link,partial_link,tag,xpath£©
-ÓÃ·¨£ºself.func('name','addLink')
+1.æ”¯æŒæ‰€æœ‰è·å–æ§ä»¶çš„æ–¹æ³•ï¼ˆname,class_name,css,id,link,partial_link,tag,xpathï¼‰
+ç”¨æ³•ï¼šself.func('name','addLink')
 
-2.Í¬Ãû¶à¿Ø¼ş»ñÈ¡·½·¨£¨class_names£¬elements_css£¬ids£¬links£¬names£¬partial_links£¬tags£¬xpaths£©
-ÓÃ·¨£ºself.func('names','addLink')   #²»Ğ´Ê±Ä¬ÈÏÈ¡µÚÒ»¸ö
-ÓÃ·¨£ºself.func('names','addLink'£¬1)»ò self.func('names','addLink'£¬number=1)   #ÕâÀïÈ¡µÚ¶ş¸ö£¨´Ó0¿ªÊ¼¼ÆËã£©
+2.åŒåå¤šæ§ä»¶è·å–æ–¹æ³•ï¼ˆclass_namesï¼Œelements_cssï¼Œidsï¼Œlinksï¼Œnamesï¼Œpartial_linksï¼Œtagsï¼Œxpathsï¼‰
+ç”¨æ³•ï¼šself.func('names','addLink')   #ä¸å†™æ—¶é»˜è®¤å–ç¬¬ä¸€ä¸ª
+ç”¨æ³•ï¼šself.func('names','addLink'ï¼Œ1)æˆ– self.func('names','addLink'ï¼Œnumber=1)   #è¿™é‡Œå–ç¬¬äºŒä¸ªï¼ˆä»0å¼€å§‹è®¡ç®—ï¼‰
 
-3.ÅäÖÃÎÄ¼şµÄÊ¹ÓÃ·½·¨
+3.é…ç½®æ–‡ä»¶çš„ä½¿ç”¨æ–¹æ³•
 [AssertionMode]
-command:assert     ¡¾verifyÌø¹ı assertÖĞÖ¹¡¿½âÊÍ£ºÉèÎªverifyÊ±£¬ÈçÓöµ½Î´ÕÒÄ³¿Ø¼ş£¬»á¼ÌĞøÖ´ĞĞºóÃæµÄÃ¿Ò»¸öšiÖè
-                                                  ÉèÎªassertÊ±£¬ÈçÓöµ½Î´ÕÒµ½Ä³¿Ø¼ş£¬Ôò´ËÓÃÀı½á¹ûÎªÊ§¸Ä£¬Ìø¹ı´ËÓÃÀı£¬¼ÌĞøÖ´ĞĞÏÂÒ»ÌõÓÃÀı
+command:assert     ã€verifyè·³è¿‡ assertä¸­æ­¢ã€‘è§£é‡Šï¼šè®¾ä¸ºverifyæ—¶ï¼Œå¦‚é‡åˆ°æœªæ‰¾æŸæ§ä»¶ï¼Œä¼šç»§ç»­æ‰§è¡Œåé¢çš„æ¯ä¸€ä¸ªæ­©éª¤
+                                                  è®¾ä¸ºassertæ—¶ï¼Œå¦‚é‡åˆ°æœªæ‰¾åˆ°æŸæ§ä»¶ï¼Œåˆ™æ­¤ç”¨ä¾‹ç»“æœä¸ºå¤±æ”¹ï¼Œè·³è¿‡æ­¤ç”¨ä¾‹ï¼Œç»§ç»­æ‰§è¡Œä¸‹ä¸€æ¡ç”¨ä¾‹
                                                   
-4.»¬¶¯¹ö¶¯Ìõµ½µ×²¿
-ÓÃ·¨£º
+4.æ»‘åŠ¨æ»šåŠ¨æ¡åˆ°åº•éƒ¨
+ç”¨æ³•ï¼š
 self.scroll_foot()
 
 
 
-5.»¬¶¯¹ö¶¯Ìõµ½¶¥²¿
-ÓÃ·¨£ºself.scroll_top()
+5.æ»‘åŠ¨æ»šåŠ¨æ¡åˆ°é¡¶éƒ¨
+ç”¨æ³•ï¼šself.scroll_top()
 
-6.¾Û½¹ÔªËØ
-ÓÃ·¨£ºself.scroll_element('id','allSelect_input')
+6.èšç„¦å…ƒç´ 
+ç”¨æ³•ï¼šself.scroll_element('id','allSelect_input')
 
-7.µã»÷ÔªËØÏÂ»¬
-ÓÃ·¨£ºself.click_scroll_element('id','idlog',1)
-½âÊÍ£ºid:¿Ø¼şµÄÀàĞÍ
-      idlog:¿Ø¼şµÄÖµ
-      1£º±íÊ¾µã»÷´ÎÊı£¨1´ú±í1´Î£©
+7.ç‚¹å‡»å…ƒç´ ä¸‹æ»‘
+ç”¨æ³•ï¼šself.click_scroll_element('id','idlog',1)
+è§£é‡Šï¼šid:æ§ä»¶çš„ç±»å‹
+      idlog:æ§ä»¶çš„å€¼
+      1ï¼šè¡¨ç¤ºç‚¹å‡»æ¬¡æ•°ï¼ˆ1ä»£è¡¨1æ¬¡ï¼‰
       
-8.»ñÈ¡ÈÕÆÚ
+8.è·å–æ—¥æœŸ
 days = gettime.getdays(1,'%Y-%m-%d') 
-ÓÃ·¨£ºdays  £¨µ±×÷Ò»¸ö²ÎÊı¼´¿É£©
-½âÊÍ£º1£¬±íÊ¾µ±Ç°Ê±¼ä¼Ó¶àÉÙÌì   Àı£ºµ±Ç°Ê±¼äÎª2016-12-5   ÄÇÃ´£ºdays=2016-12-6
-%Y-%m-%d: ±íÊ¾¸ñÊ½£¬¿É×Ô¶¨Òå
+ç”¨æ³•ï¼šdays  ï¼ˆå½“ä½œä¸€ä¸ªå‚æ•°å³å¯ï¼‰
+è§£é‡Šï¼š1ï¼Œè¡¨ç¤ºå½“å‰æ—¶é—´åŠ å¤šå°‘å¤©   ä¾‹ï¼šå½“å‰æ—¶é—´ä¸º2016-12-5   é‚£ä¹ˆï¼šdays=2016-12-6
+%Y-%m-%d: è¡¨ç¤ºæ ¼å¼ï¼Œå¯è‡ªå®šä¹‰
 
-9.»ñÈ¡Êı¾İ¿âÄÚÈİ
+9.è·å–æ•°æ®åº“å†…å®¹
 InitMySqldb.MySqldb(sql)
 InitMySqldb.MySqldb("select * ")
 
-Ò»£¬µ¥¸öÔªËØ¿Ø¼şÊ±
-9.Ö±½ÓÔÚÊäÈë¿òÄÚÊäÈëÄÚÈİ
-self.func('id',"name",send_keys=u"Ò¦Ò«¿ª")
+ä¸€ï¼Œå•ä¸ªå…ƒç´ æ§ä»¶æ—¶
+9.ç›´æ¥åœ¨è¾“å…¥æ¡†å†…è¾“å…¥å†…å®¹
+self.func('id',"name",send_keys=u"å§šè€€å¼€")
 
-10.#»ñÈ¡ÔªËØµÄÎÄ±¾Öµ
-self.func('id',"startLogin"£¬get_element='text')
+10.#è·å–å…ƒç´ çš„æ–‡æœ¬å€¼
+self.func('id',"startLogin"ï¼Œget_element='text')
 
-11.#Çå³ıÊäÈë¿òµÄÎÄ±¾Öµ
-self.func('id',"startLogin"£¬get_element='clear')
+11.#æ¸…é™¤è¾“å…¥æ¡†çš„æ–‡æœ¬å€¼
+self.func('id',"startLogin"ï¼Œget_element='clear')
 
-12. #»ñÈ¡ÔªËØ×ø±ê
-self.func('id',"startLogin"£¬get_element='location')
+12. #è·å–å…ƒç´ åæ ‡
+self.func('id',"startLogin"ï¼Œget_element='location')
 
-13.#Ìá½»±íµ¥
-self.func('id',"startLogin"£¬get_element='submit')
+13.#æäº¤è¡¨å•
+self.func('id',"startLogin"ï¼Œget_element='submit')
 
-14.#»ñÈ¡CSSµÄÊôĞÔÖµ
-self.func('id',"startLogin"£¬get_element='css_name')
+14.#è·å–CSSçš„å±æ€§å€¼
+self.func('id',"startLogin"ï¼Œget_element='css_name')
 
-15.#»ñÈ¡ÔªËØµÄÊôĞÔÖµ
-self.func('id',"startLogin"£¬get_element='get_attribute')
+15.#è·å–å…ƒç´ çš„å±æ€§å€¼
+self.func('id',"startLogin"ï¼Œget_element='get_attribute')
 
-16. #ÅĞ¶ÏÔªËØÊÇ·ñ±»Ñ¡ÖĞ
-self.func('id',"startLogin"£¬get_element='is_selected')
+16. #åˆ¤æ–­å…ƒç´ æ˜¯å¦è¢«é€‰ä¸­
+self.func('id',"startLogin"ï¼Œget_element='is_selected')
 
-17. #·µ»ØÔªËØµÄ´óĞ¡
-self.func('id',"startLogin"£¬get_element='size')
+17. #è¿”å›å…ƒç´ çš„å¤§å°
+self.func('id',"startLogin"ï¼Œget_element='size')
 
-18.#ÅĞ¶ÏÔªËØÊÇ·ñÏÔÊ¾
-self.func('id',"startLogin"£¬get_element='is_displayed')
+18.#åˆ¤æ–­å…ƒç´ æ˜¯å¦æ˜¾ç¤º
+self.func('id',"startLogin"ï¼Œget_element='is_displayed')
 
-19.#ÅĞ¶ÏÔªËØÊÇ·ñ±»Ê¹ÓÃ
-self.func('id',"startLogin"£¬get_element='is_enabled')
+19.#åˆ¤æ–­å…ƒç´ æ˜¯å¦è¢«ä½¿ç”¨
+self.func('id',"startLogin"ï¼Œget_element='is_enabled')
 
-20.#·µ»ØÔªËØµÄtagName
-self.func('id',"startLogin"£¬get_element='tagName')
+20.#è¿”å›å…ƒç´ çš„tagName
+self.func('id',"startLogin"ï¼Œget_element='tagName')
 
-21. #ÓÒ»÷ÔªËØ
-self.func('id',"startLogin"£¬get_element='context_click')
+21. #å³å‡»å…ƒç´ 
+self.func('id',"startLogin"ï¼Œget_element='context_click')
 
-22.#Ë«»÷ÔªËØ
-self.func('id',"startLogin"£¬get_element='double_click')
+22.#åŒå‡»å…ƒç´ 
+self.func('id',"startLogin"ï¼Œget_element='double_click')
 
-23.#Êó±êĞüÍ£ÔÚÒ»¸öÔªËØÉÏ
-self.func('id',"startLogin"£¬get_element='move_to_element')
+23.#é¼ æ ‡æ‚¬åœåœ¨ä¸€ä¸ªå…ƒç´ ä¸Š
+self.func('id',"startLogin"ï¼Œget_element='move_to_element')
 
-24.#Ñ¡ÔñÏÂÀ­¿òÀïµÄÄÚÈİ
-self.func('id',"startLogin"£¬get_element='select',number=1)  #Ñ¡ÔñµÚ¼¸¸ö
-self.func('id',"startLogin"£¬get_element='select',select_keys=u'ÉîÛÚ') #Ö±½ÓÑ¡Ôñ¶ÔÓ¦µÄÎÄ±¾
+24.#é€‰æ‹©ä¸‹æ‹‰æ¡†é‡Œçš„å†…å®¹
+self.func('id',"startLogin"ï¼Œget_element='select',number=1)  #é€‰æ‹©ç¬¬å‡ ä¸ª
+self.func('id',"startLogin"ï¼Œget_element='select',select_keys=u'æ·±åœ³') #ç›´æ¥é€‰æ‹©å¯¹åº”çš„æ–‡æœ¬
 
-self.func('id',"startLogin",send_keys=u'ÉîÛÚ')
+self.func('id',"startLogin",send_keys=u'æ·±åœ³')
 
-25.»Øµ½¶¥²¿
-self.scroll_top()  #Ğëµ¼ÈëÄ£¿é
-
-
-26.À­µ½µ×²¿
-self.scroll_foot()  #Ğëµ¼ÈëÄ£¿é
+25.å›åˆ°é¡¶éƒ¨
+self.scroll_top()  #é¡»å¯¼å…¥æ¨¡å—
 
 
-27.¾Û½¹ÔªËØ
-self.scroll_element()   #Ğëµ¼ÈëÄ£¿é
-self.func("id","isdfs",get_element='scroll_element') #²»ÓÃµ¼ÈëÄ£¿é
+26.æ‹‰åˆ°åº•éƒ¨
+self.scroll_foot()  #é¡»å¯¼å…¥æ¨¡å—
 
-28.µã»÷ÔªËØÏÂ»¬
-self.click_scroll_element("id","isdfs",number=1)  #Ğëµ¼ÈëÄ£¿é
 
-29.°´¼ü²Ù×÷
-#µ¥¼ü
+27.èšç„¦å…ƒç´ 
+self.scroll_element()   #é¡»å¯¼å…¥æ¨¡å—
+self.func("id","isdfs",get_element='scroll_element') #ä¸ç”¨å¯¼å…¥æ¨¡å—
+
+28.ç‚¹å‡»å…ƒç´ ä¸‹æ»‘
+self.click_scroll_element("id","isdfs",number=1)  #é¡»å¯¼å…¥æ¨¡å—
+
+29.æŒ‰é”®æ“ä½œ
+#å•é”®
 self.func('id',"name",send_keys=Keys.ENTER)
-#Ë«¼ü
-self.func('id',"name",send_keys=(Keys.CONTROL,'x')) #¼ôÇĞ
-self.func('id',"name",send_keys=(Keys.CONTROL,'v')) #Õ³Ìù
-self.func('id',"name",send_keys=(Keys.CONTROL,'a')) #È«Ñ¡
-#Èı¼ü
+#åŒé”®
+self.func('id',"name",send_keys=(Keys.CONTROL,'x')) #å‰ªåˆ‡
+self.func('id',"name",send_keys=(Keys.CONTROL,'v')) #ç²˜è´´
+self.func('id',"name",send_keys=(Keys.CONTROL,'a')) #å…¨é€‰
+#ä¸‰é”®
 self.func('id',"name",send_keys=(Keys.SHIFT+Keys.ALT+Keys.UP))
 
-30.È¥³ıÖ»¶ÁÊôĞÔ
-self.func('css',"input[name='outBusStartTime']"£¬get_element='readonly') #Ö»ÄÜÓÃCSSÊôĞÔ
+30.å»é™¤åªè¯»å±æ€§
+self.func('css',"input[name='outBusStartTime']"ï¼Œget_element='readonly') #åªèƒ½ç”¨CSSå±æ€§
 
-31.È¥³ıÖ»¶ÁÊôĞÔ²¢¸³Öµ
-self.func('css',"input[name='outBusStartTime']"£¬get_element='readonly'£¬send_keys='2016-12-14') #Ö»ÄÜÓÃCSSÊôĞÔ
+31.å»é™¤åªè¯»å±æ€§å¹¶èµ‹å€¼
+self.func('css',"input[name='outBusStartTime']"ï¼Œget_element='readonly'ï¼Œsend_keys='2016-12-14') #åªèƒ½ç”¨CSSå±æ€§
 
 
-¶ş£¬¶à¸öÔªËØ¿Ø¼şÊ±(number=0 ±íÊ¾È¡µÚ¼¸¸öÔªËØ¿Ø¼ş)
-1.#»ñÈ¡ÔªËØµÄÎÄ±¾Öµ
+äºŒï¼Œå¤šä¸ªå…ƒç´ æ§ä»¶æ—¶(number=0 è¡¨ç¤ºå–ç¬¬å‡ ä¸ªå…ƒç´ æ§ä»¶)
+1.#è·å–å…ƒç´ çš„æ–‡æœ¬å€¼
 self.func('ids',"startLogin",number=0,get_element='text')
 
-2.#Çå³ıÊäÈë¿òµÄÎÄ±¾Öµ
+2.#æ¸…é™¤è¾“å…¥æ¡†çš„æ–‡æœ¬å€¼
 self.func('ids',"startLogin",number=0,get_element='clear')
 
-3. #»ñÈ¡ÔªËØ×ø±ê
+3. #è·å–å…ƒç´ åæ ‡
 self.func('ids',"startLogin",number=0,get_element='location')
 
-4.#Ìá½»±íµ¥
+4.#æäº¤è¡¨å•
 self.func('ids',"startLogin",number=0,get_element='submit')
 
-5.#»ñÈ¡CSSµÄÊôĞÔÖµ
+5.#è·å–CSSçš„å±æ€§å€¼
 self.func('ids',"startLogin",number=0,get_element='css_name')
 
-6.#»ñÈ¡ÔªËØµÄÊôĞÔÖµ
+6.#è·å–å…ƒç´ çš„å±æ€§å€¼
 self.func('ids',"startLogin",number=0,get_element='get_attribute')
 
-7. #ÅĞ¶ÏÔªËØÊÇ·ñ±»Ñ¡ÖĞ
+7. #åˆ¤æ–­å…ƒç´ æ˜¯å¦è¢«é€‰ä¸­
 self.func('ids',"startLogin",number=0,get_element='is_selected')
 
-8. #·µ»ØÔªËØµÄ´óĞ¡
+8. #è¿”å›å…ƒç´ çš„å¤§å°
 self.func('ids',"startLogin",number=0,get_element='size')
 
-9.#ÅĞ¶ÏÔªËØÊÇ·ñÏÔÊ¾
+9.#åˆ¤æ–­å…ƒç´ æ˜¯å¦æ˜¾ç¤º
 self.func('ids',"startLogin",number=0,get_element='is_displayed')
 
-10.#ÅĞ¶ÏÔªËØÊÇ·ñ±»Ê¹ÓÃ
+10.#åˆ¤æ–­å…ƒç´ æ˜¯å¦è¢«ä½¿ç”¨
 self.func('ids',"startLogin",number=0,get_element='is_enabled')
 
-11.#·µ»ØÔªËØµÄtagName
+11.#è¿”å›å…ƒç´ çš„tagName
 self.func('ids',"startLogin",number=0,get_element='tagName')
 
-12. #ÓÒ»÷ÔªËØ
+12. #å³å‡»å…ƒç´ 
 self.func('ids',"startLogin",number=0,get_element='context_click')
 
-13.#Ë«»÷ÔªËØ
+13.#åŒå‡»å…ƒç´ 
 self.func('ids',"startLogin",number=0,get_element='double_click')
 
-14.#Êó±êĞüÍ£ÔÚÒ»¸öÔªËØÉÏ
+14.#é¼ æ ‡æ‚¬åœåœ¨ä¸€ä¸ªå…ƒç´ ä¸Š
 self.func('ids',"startLogin",number=0,get_element='move_to_element')
 
-15.#Ñ¡ÔñÏÂÀ­¿òÀïµÄÄÚÈİ
-self.func('ids',"startLogin",number=0,get_element='select',select_keys=u'ÉîÛÚ') #Ö±½ÓÑ¡Ôñ¶ÔÓ¦µÄÎÄ±¾
+15.#é€‰æ‹©ä¸‹æ‹‰æ¡†é‡Œçš„å†…å®¹
+self.func('ids',"startLogin",number=0,get_element='select',select_keys=u'æ·±åœ³') #ç›´æ¥é€‰æ‹©å¯¹åº”çš„æ–‡æœ¬
 self.func('ids',"startLogin",number=0,get_element='select_down',nb=1)
 
-16.Ö±½ÓÔÚÊäÈë¿òÄÚÊäÈëÄÚÈİ   #¶à¸öÔªËØ¿Ø¼şÊ±Ñ¡ÔñµÚ1¸ö¿Ø¼şÊäÈë
-self.func('ids',"name",number=0,send_keys=u"Ò¦Ò«¿ª")
+16.ç›´æ¥åœ¨è¾“å…¥æ¡†å†…è¾“å…¥å†…å®¹   #å¤šä¸ªå…ƒç´ æ§ä»¶æ—¶é€‰æ‹©ç¬¬1ä¸ªæ§ä»¶è¾“å…¥
+self.func('ids',"name",number=0,send_keys=u"å§šè€€å¼€")
 
-17.¶à¸öÔªËØ¿Ø¼şÊ±¾Û½¹ÔªËØ
+17.å¤šä¸ªå…ƒç´ æ§ä»¶æ—¶èšç„¦å…ƒç´ 
 self.func("ids","isdfs",number=0,get_element='scroll_element')
 
 
 
- ×¢Òâ£º
- 1.ÓÃÀıÃûÎª£ºtest_  ¿ªÍ·
+ æ³¨æ„ï¼š
+ 1.ç”¨ä¾‹åä¸ºï¼štest_  å¼€å¤´
  
- 2.»ğºüä¯ÀÀÆ÷Ä¬ÈÏ°²×°¼´¿É
+ 2.ç«ç‹æµè§ˆå™¨é»˜è®¤å®‰è£…å³å¯
  
  
- 3.      self.func('name',u"ÖĞÎÄ")   ÖĞÎÄÇ°ÃæÒª¼ÓÉÏĞ¡Ğ´µÄu
+ 3.      self.func('name',u"ä¸­æ–‡")   ä¸­æ–‡å‰é¢è¦åŠ ä¸Šå°å†™çš„u
  
- 4.½Å±¾±£´æÎªASCII
+ 4.è„šæœ¬ä¿å­˜ä¸ºASCII
  
  9.
   self.func('xpath',"//div[@id='bdmapbox']/div[2]/div[2]/div/select",number=1,getelement='select')
- self.func('xpath',"//div[@id='bdmapbox']/div[2]/div[2]/div/select",getelement='select',select_keys=u"±±¾©ÊĞ")
+ self.func('xpath',"//div[@id='bdmapbox']/div[2]/div[2]/div/select",getelement='select',select_keys=u"åŒ—äº¬å¸‚")
  
- ÒÔÉÏselenium·½·¨±£Áô
+ ä»¥ä¸Šseleniumæ–¹æ³•ä¿ç•™
  
- appiumĞÂÔö·½·¨
- 1.#·µ»Øµ±Ç°»á»°ÖĞµÄÉÏÏÂÎÄ£¬Ê¹ÓÃºó¿ÉÒÔÊ¶H5Ò³ÃæµÄ¿Ø¼ş
+ appiumæ–°å¢æ–¹æ³•
+ 1.#è¿”å›å½“å‰ä¼šè¯ä¸­çš„ä¸Šä¸‹æ–‡ï¼Œä½¿ç”¨åå¯ä»¥è¯†H5é¡µé¢çš„æ§ä»¶
  self.func(get_element='contexts')
  
- 2.#·µ»Øµ±Ç°»á»°ÖĞµÄÉÏÏÂÎÄ£¬Ê¹ÓÃºó¿ÉÒÔÊ¶H5Ò³ÃæµÄ¿Ø¼ş
+ 2.#è¿”å›å½“å‰ä¼šè¯ä¸­çš„ä¸Šä¸‹æ–‡ï¼Œä½¿ç”¨åå¯ä»¥è¯†H5é¡µé¢çš„æ§ä»¶
  self.func(get_element='current_context')
  
- 3.#ÖØÖÃÓ¦ÓÃ£¨ÀàËÆÉ¾³ıÓ¦ÓÃÊı¾İ£©
+ 3.#é‡ç½®åº”ç”¨ï¼ˆç±»ä¼¼åˆ é™¤åº”ç”¨æ•°æ®ï¼‰
  self.func(get_element='reset')
  
- 4.#Òş²Ø¼üÅÌ£¨IOSÊ¹ÓÃkey_nameÒş²Ø£¬°²×¿²»Ê¹ÓÃ²ÎÊı£©
+ 4.#éšè—é”®ç›˜ï¼ˆIOSä½¿ç”¨key_nameéšè—ï¼Œå®‰å“ä¸ä½¿ç”¨å‚æ•°ï¼‰
  self.func(get_element='hide_keyboard')
  
- 5.#·µ»Øµ±Ç°»á»°ÖĞµÄÉÏÏÂÎÄ£¬Ê¹ÓÃºó¿ÉÒÔÊ¶H5Ò³ÃæµÄ¿Ø¼ş
+ 5.#è¿”å›å½“å‰ä¼šè¯ä¸­çš„ä¸Šä¸‹æ–‡ï¼Œä½¿ç”¨åå¯ä»¥è¯†H5é¡µé¢çš„æ§ä»¶
  self.func(get_element='current_activity')
  
- 6.#Ò¡Ò»Ò¡ÊÖ»ú
+ 6.#æ‘‡ä¸€æ‘‡æ‰‹æœº
  self.func(get_element='shake')
  
- 7.#´ò¿ªÏµÍ³Í¨ÖªÀ¸
+ 7.#æ‰“å¼€ç³»ç»Ÿé€šçŸ¥æ 
  self.func(get_element='open_notifications')
  
- 8.#·µ»ØÍøÂçÀàĞÍÊıÖµ
+ 8.#è¿”å›ç½‘ç»œç±»å‹æ•°å€¼
  self.func(get_element='network_connection')
  
- 9.#·µ»Ø°²×¿Éè±¸¿ÉÓÃµÄÊäÈë·¨
+ 9.#è¿”å›å®‰å“è®¾å¤‡å¯ç”¨çš„è¾“å…¥æ³•
  self.func(get_element='available_ime_engines')
  
- 10.#¼ì²é°²×¿Éè±¸ÊÇ·ñÊäÈë·¨·şÎñ»î¶¯
+ 10.#æ£€æŸ¥å®‰å“è®¾å¤‡æ˜¯å¦è¾“å…¥æ³•æœåŠ¡æ´»åŠ¨
  self.func(get_element='is_ime_active')
  
- 11.#¹Ø±Õ°²×¿µ±Ç°µÄÊäÈë·¨
+ 11.#å…³é—­å®‰å“å½“å‰çš„è¾“å…¥æ³•
  self.func(get_element='deactivate_ime_engine')
  
- 12.#·µ»Øµ±Ç°ÊäÈë·¨µÄ°üÃû
+ 12.#è¿”å›å½“å‰è¾“å…¥æ³•çš„åŒ…å
  self.func(get_element='active_ime_engine')
  
- 13.#´ò¿ª°²×¿Éè±¸ÉÏµÄÎ»ÖÃ¶¨Î»ÉèÖÃ
+ 13.#æ‰“å¼€å®‰å“è®¾å¤‡ä¸Šçš„ä½ç½®å®šä½è®¾ç½®
  self.func(get_element='toggle_location_services')
  
- 14.#»ñÈ¡µ±Ç°Ò³ÃæµÄÍøÖ·
+ 14.#è·å–å½“å‰é¡µé¢çš„ç½‘å€
  self.func(get_element='current_url')
  
- 15.#·µ»Øµ±Ç°Ò³ÃæµÄÔ´
+ 15.#è¿”å›å½“å‰é¡µé¢çš„æº
  self.func(get_element='page_source')
 
- 16.#½«ÔªËØ1¹ö¶¯µ½Ä¿±êÔªËØ2
+ 16.#å°†å…ƒç´ 1æ»šåŠ¨åˆ°ç›®æ ‡å…ƒç´ 2
  self.func("id","com.wxws.myticket:id/tv_ticket_cjkx","id","com.wxws.myticket:id/etBecity",get_element='scroll')
 
- 17.#´ÓÔªËØ1ÍÏ¶¯µ½ÔªËØ2
+ 17.#ä»å…ƒç´ 1æ‹–åŠ¨åˆ°å…ƒç´ 2
  self.func("id","com.wxws.myticket:id/tv_ticket_cjkx","id","com.wxws.myticket:id/etBecity",get_element='drag_and_drop')
 
- 18.#´ÓAµã»¬¶¯ÖÁBµã£¬»¬¶¯Ê±¼äÎªºÁÃë
+ 18.#ä»Aç‚¹æ»‘åŠ¨è‡³Bç‚¹ï¼Œæ»‘åŠ¨æ—¶é—´ä¸ºæ¯«ç§’
  self.func('1000','1000','20','1000',times=500,get_element='swipe',nb=4)
 
- 19.#°´×¡A×ø±êµãºó¿ìËÙ»¬¶¯ÖÁB×ø±êµã
+ 19.#æŒ‰ä½Aåæ ‡ç‚¹åå¿«é€Ÿæ»‘åŠ¨è‡³Båæ ‡ç‚¹
  self.func('1000','1000','20','1000',get_element='flick')
 
- 20.#ÉèÖÃÉè±¸µÄ¾­Î³¶È
+ 20.#è®¾ç½®è®¾å¤‡çš„ç»çº¬åº¦
  self.func('1000','1000','20',get_element='set_location')
 
- 21.#´ò¿ª°²×¿Éè±¸ÉÏµÄÎ»ÖÃ¶¨Î»ÉèÖÃ
+ 21.#æ‰“å¼€å®‰å“è®¾å¤‡ä¸Šçš„ä½ç½®å®šä½è®¾ç½®
  self.func(get_element='toggle_location_services')
 
- 22.ÉÏÏÂ×óÓÒ»¬¶¯£¨number=3,times=1000´ËÁ½²ÎÊı¿ÉÊ¡ÂÔ£©
-SettingDevice.scroll(self,'up',number=3,times=1000)  #ÏòÉÏ»¬¶¯ÆÁÄ»
-SettingDevice.scroll(self,'down',number=3,times=1000)  #ÏòÉÏ»¬¶¯ÆÁÄ»
-SettingDevice.scroll(self,'left',number=3,times=1000)  #ÏòÉÏ»¬¶¯ÆÁÄ»
-SettingDevice.scroll(self,'right',number=3,times=1000)  #ÏòÉÏ»¬¶¯ÆÁÄ»
+ 22.ä¸Šä¸‹å·¦å³æ»‘åŠ¨ï¼ˆnumber=3,times=1000æ­¤ä¸¤å‚æ•°å¯çœç•¥ï¼‰
+SettingDevice.scroll(self,'up',number=3,times=1000)  #å‘ä¸Šæ»‘åŠ¨å±å¹•
+SettingDevice.scroll(self,'down',number=3,times=1000)  #å‘ä¸Šæ»‘åŠ¨å±å¹•
+SettingDevice.scroll(self,'left',number=3,times=1000)  #å‘ä¸Šæ»‘åŠ¨å±å¹•
+SettingDevice.scroll(self,'right',number=3,times=1000)  #å‘ä¸Šæ»‘åŠ¨å±å¹•
 
-23.content-desc·½·¨(app×¨ÓÃ£©
-self.func("desc",u"ÍËÆ±ËµÃ÷")
+23.content-descæ–¹æ³•(appä¸“ç”¨ï¼‰
+self.func("desc",u"é€€ç¥¨è¯´æ˜")
 
-24.Ìí¼ÓÅĞ¶ÏtoastÏûÏ¢£¨×¢£ºÄ£Ê½Ğè»»ÎªUiAutomator2£¬µ±UiAutomator2Ê±¶àÔªËØÈ¡ÖµÓÀÔ¶ÎªµÚÒ»¸ö£¬ÇëÌØ×¢Òâ£©
-#ÓÃ·¨£ºfind_toast(self,By.XPATH,"id")(ByÓĞÒÔÏÂ·½·¨£ºCLASS_NAME,CSS_SELECTOR,ID,LINK_TEXT,NAME,PARTIAL_LINK_TEXT,TAG_NAME,XPATH)
+24.æ·»åŠ åˆ¤æ–­toastæ¶ˆæ¯ï¼ˆæ³¨ï¼šæ¨¡å¼éœ€æ¢ä¸ºUiAutomator2ï¼Œå½“UiAutomator2æ—¶å¤šå…ƒç´ å–å€¼æ°¸è¿œä¸ºç¬¬ä¸€ä¸ªï¼Œè¯·ç‰¹æ³¨æ„ï¼‰
+#ç”¨æ³•ï¼šfind_toast(self,By.XPATH,"id")(Byæœ‰ä»¥ä¸‹æ–¹æ³•ï¼šCLASS_NAME,CSS_SELECTOR,ID,LINK_TEXT,NAME,PARTIAL_LINK_TEXT,TAG_NAME,XPATH)
 
-25.¾Ö²¿¿Ø¼ş½ØÍ¼ (nameÄ¬ÈÏÎª0£¬nameÄ¬ÈÏÎªimage,´ËÁ½²ÎÊı¿ÉÒÔÊ¡ÂÔ²»´«)
-SettingDevice.get_element_screen(self,"id","com.wxws.myticket:id/etBecity",name="image")  #½ØÍ¼¿Ø¼şÍ¼Æ¬
-SettingDevice.get_element_screen(self,"ids","com.wxws.myticket:id/etBecity",number=1,name="image")  #½ØÍ¼¿Ø¼şÍ¼Æ¬
+25.å±€éƒ¨æ§ä»¶æˆªå›¾ (nameé»˜è®¤ä¸º0ï¼Œnameé»˜è®¤ä¸ºimage,æ­¤ä¸¤å‚æ•°å¯ä»¥çœç•¥ä¸ä¼ )
+SettingDevice.get_element_screen(self,"id","com.wxws.myticket:id/etBecity",name="image")  #æˆªå›¾æ§ä»¶å›¾ç‰‡
+SettingDevice.get_element_screen(self,"ids","com.wxws.myticket:id/etBecity",number=1,name="image")  #æˆªå›¾æ§ä»¶å›¾ç‰‡
 
-26.½ØÍ¼¶Ô±È(screen_pathÄ¬ÈÏÎªimage)
-ÓÃ·¨£ºSettingDevice.test_same_as(self,"id","com.wxws.myticket:id/etBecity",percent=100,screen_path="D:\\screen\\image.png")  #percent±íÊ¾100%ÏàËÆ(Ïà)
+26.æˆªå›¾å¯¹æ¯”(screen_pathé»˜è®¤ä¸ºimage)
+ç”¨æ³•ï¼šSettingDevice.test_same_as(self,"id","com.wxws.myticket:id/etBecity",percent=100,screen_path="D:\\screen\\image.png")  #percentè¡¨ç¤º100%ç›¸ä¼¼(ç›¸)
 SettingDevice.test_same_as(self,"ids","com.wxws.myticket:id/etBecity",number=1,percent=100,screen_path="D:\\screen\\image.png")
 
-27.Í¼Æ¬ÎÄ×ÖÊ¶±ğ (screen_pathÄ¬ÈÏÎªimage)
-ÓÃ·¨£ºprint OCR.picture_text(screen_path=r"D:\\screen\\image.png")
+27.å›¾ç‰‡æ–‡å­—è¯†åˆ« (screen_pathé»˜è®¤ä¸ºimage)
+ç”¨æ³•ï¼šprint OCR.picture_text(screen_path=r"D:\\screen\\image.png")
+
+28.æˆªå–æ§ä»¶å›¾ç‰‡åœ¨çº¿è¯†åˆ«
+ç”¨æ³•ï¼šprint SettingDevice.get_element_screen_OCR(self,"id","com.wxws.myticket:id/etBecity")
